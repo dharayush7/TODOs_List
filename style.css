@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+:root {
+    --dark: #343a40;
+}
+
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: var(--dark);
+    height: fit-content;
+}
+
+.head {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.head h2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+    font-family: Arial;
+}
+
+.hr {
+    border-width: 3px;
+}
+
+/* Footer section */
+
+#footer {
+    width: 100%;
+    height: auto;
+}
+
+.footer_main {
+    padding: 30px 0px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+}
+
+.logo img {
+    height: 80px;
+    width: 80px;
+}
+
+.footer_right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+.title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: white;
+}
+
+.title h2 span {
+    font-weight: 500;
+}
+
+.title p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300px;
+    color: white;
+}
+
+.footer_right .icon {
+    display: flex;
+    gap: 20px;
+}
+
+.img {
+    transition: 0.3s ease filter;
+}
+
+.filter {
+    filter: brightness(0) invert(1);
+}
+
+.hover3 {
+    filter: none;
+}
+
+.cop p {
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.cop p span {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+/* End Footer section */
+
+
+/* Media quary footer */
+@media (max-width: 425px) {
+
+    .footer_main {
+        padding: 15px 10px;
+        gap: 10px;
+    }
+
+    .logo img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .title h2 {
+        font-size: 20px;
+    }
+
+    .title p {
+        font-size: 15px;
+    }
+
+    .footer_right .icon a img {
+        height: 30px;
+        width: 30px;
+    }
+
+    .footer_right .icon {
+        gap: 10px;
+
+    }
+
+    .pytitle p {
+        font-size: 15px;
+    }
+}
