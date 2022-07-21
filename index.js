@@ -84,7 +84,7 @@ function deleted(itemIndex) {
   update();
 }
 function clearStorage() {
-  if (confirm("Do you areally want to clear?")) {
+  if (confirm("Do you really want to clear?")) {
     localStorage.clear();
     update();
   }
