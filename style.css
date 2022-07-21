@@ -117,16 +117,28 @@ a {
     filter: none;
 }
 
-.cop p {
-    font-size: 20px;
+.end p {
+    margin: 0;
+    font-size: 15px;
     font-family: 'Montserrat', sans-serif;
     color: white;
     text-align: center;
 }
 
-.cop p span {
-    font-size: 25px;
+.end p span {
+    /* margin-top: 2px; */
+    font-size: 15px;
     font-weight: 600;
+}
+
+.end {
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
 
 /* End Footer section */
