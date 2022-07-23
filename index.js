@@ -32,7 +32,7 @@ function getAndUpdate() {
   console.log("Updating List...");
   tit = document.getElementById("title").value;
   desc = document.getElementById("description").value;
-  if ((tit.length != 0 * desc.length) != 0) {
+  if ((tit.length != 0 || desc.length) != 0) {
     if (localStorage.getItem("itemsJson") == null) {
       itemJsonArray = [];
       itemJsonArray.push([tit, desc]);
