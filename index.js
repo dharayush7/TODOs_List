@@ -29,10 +29,16 @@ function clear() {
 }
 
 function getAndUpdate() {
-  console.log("Updating List...");
   tit = document.getElementById("title").value;
   desc = document.getElementById("description").value;
-  if ((tit.length != 0 || desc.length) != 0) {
+  if (tit.length == 0) {
+    alert("Title is entry!");
+      
+  }
+  else if(desc.length == 0){
+    alert("Description is entry!");
+  }
+  else {
     if (localStorage.getItem("itemsJson") == null) {
       itemJsonArray = [];
       itemJsonArray.push([tit, desc]);
@@ -44,10 +50,8 @@ function getAndUpdate() {
       localStorage.setItem("itemsJson", JSON.stringify(itemJsonArray));
     }
     clear();
-  } else {
-    alert("Title or Description is entry!");
+    update();
   }
-  update();
 }
 
 function update() {
@@ -84,7 +88,7 @@ function deleted(itemIndex) {
   update();
 }
 function clearStorage() {
-  if (confirm("Do you really want to clear?")) {
+  if (confirm("Do you areally want to clear?")) {
     localStorage.clear();
     update();
   }
